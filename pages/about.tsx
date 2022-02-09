@@ -5,8 +5,8 @@ const StyledH1 = styled.h1`
 	font-family: ${(props) => props.theme.font.heading};
 `;
 
-const Home: NextPage = () => {
-	return <StyledH1> Home </StyledH1>;
+const About: NextPage = () => {
+	return <StyledH1> About </StyledH1>;
 };
 
-export default Home;
+export default About;
