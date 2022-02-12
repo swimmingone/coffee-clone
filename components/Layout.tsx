@@ -1,11 +1,12 @@
 import NavBar from './NavBar';
+import Seo from './Seo';
 
-const Layout = ({ children }) => {
+const Layout = () => {
 	return (
 		<>
 			<Seo />
 			<NavBar />
-			<div>{children}</div>
+			<div></div>
 		</>
 	);
 };
