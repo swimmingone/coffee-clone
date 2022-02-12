@@ -8,10 +8,9 @@ const Container = styled.nav`
 `;
 
 const StyledLink = styled.a`
-      text-decoration: : none;
-	  cursor: pointer;
-	  font-family: ${(props) => props.theme.font.heading};
-	  color: ${(props) => (props.classname === 'active' ? 'tomato' : 'black')};
+	cursor: pointer;
+	font-family: ${(props) => props.theme.font.heading};
+	color: ${(props) => (props.className === 'active' ? 'tomato' : 'black')};
 `;
 
 const NavBar = () => {
@@ -19,10 +18,10 @@ const NavBar = () => {
 	return (
 		<Container>
 			<Link href={'/'}>
-				<StyledLink classname={router.pathname === '/' ? 'active' : ''}>Home</StyledLink>
+				<StyledLink className={router.pathname === '/' ? 'active' : ''}>Home</StyledLink>
 			</Link>
 			<Link href={'/about'}>
-				<StyledLink classname={router.pathname === '/about' ? 'active' : ''}>
+				<StyledLink className={router.pathname === '/about' ? 'active' : ''}>
 					About
 				</StyledLink>
 			</Link>
