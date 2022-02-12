@@ -1,12 +1,17 @@
+import React, { ReactChild, ReactChildren } from 'react';
+
 import NavBar from './NavBar';
 import Seo from './Seo';
 
-const Layout = () => {
+interface Props {
+	children: ReactChild | ReactChildren;
+}
+const Layout = ({ children }: Props) => {
 	return (
 		<>
 			<Seo />
 			<NavBar />
-			<div></div>
+			<div>{children}</div>
 		</>
 	);
 };

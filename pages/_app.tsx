@@ -5,6 +5,7 @@ import { theme } from '../styles/theme';
 import type { ReactElement, ReactNode } from 'react';
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
+import Layout from '../components/Layout';
 
 type NextPageWithLayout = NextPage & {
 	getLayout?: (page: ReactElement) => ReactNode;
@@ -20,7 +21,9 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 		<>
 			<GlobalStyle />
 			<ThemeProvider theme={theme}>
-				<Component {...pageProps} />
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
 			</ThemeProvider>
 		</>
 	);
