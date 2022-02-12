@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 const GlobalStyle = createGlobalStyle`
   /* Using this inherit reset method means you can use content-box or padding-box without a universal selector overriding your CSS */
   html {

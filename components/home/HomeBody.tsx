@@ -12,9 +12,6 @@ const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 414px;
-	border: 1px solid black;
-	padding-left: 24px;
-	padding-right: 24px;
 `;
 
 const HomeBody = () => {

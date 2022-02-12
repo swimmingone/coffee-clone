@@ -8,6 +8,7 @@ const HeaderContainer = styled.div`
 	overflow: scroll;
 	position: sticky;
 	top: 0;
+	z-index: 1;
 `;
 
 const Banner = styled.div`

@@ -18,7 +18,7 @@ const Layout = ({ children }: Props) => {
 		<>
 			<Seo />
 			<Header />
-			<NavBar />
+			{/*<NavBar />*/}
 			<BodyContainer>{children}</BodyContainer>
 		</>
 	);
