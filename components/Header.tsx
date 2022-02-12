@@ -1,8 +1,8 @@
 import styled from 'styled-components';
+import SubHeader from './SubHeader';
 
 const HeaderContainer = styled.div`
 	width: 100vw;
-	height: 10vh;
 	display: flex;
 	flex-direction: column;
 	overflow: scroll;
@@ -10,26 +10,52 @@ const HeaderContainer = styled.div`
 	top: 0;
 `;
 
-const HeaderTitle = styled.div`
+const Banner = styled.div`
+	display: flex;
+	justify-content: center;
 	flex: 2;
-	height: 100%;
-	border: 1px solid black;
-	font-size: 1rem;
+	height: 64px;
+	color: white;
+	text-align: center;
+	background: linear-gradient(90deg, #2333e5 0%, #f782b7 100%);
+`;
+const BannerContent = styled.div`
+	display: flex;
+	justify-content: space-between;
+	width: 366px;
+`;
+const BannerTitle = styled.div`
+	display: flex;
+	flex: 3;
+	text-align: left;
+	align-items: center;
+	font-size: 16px;
 	font-weight: bold;
 	font-family: 'Jua', sans-serif;
-	text-align: center;
-	background-color: -gradient(90deg, #2333e5 0%, #f782b7 100%);
 `;
-const SearchBar = styled.div`
+const BannerButton = styled.button`
 	flex: 1;
-	border: 1px solid black;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: black;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Jua', sans-serif;
+	padding: 8px 16px;
+	border-radius: 100px;
+	border: none;
+	background-color: white;
 `;
-
 const Header = () => {
 	return (
 		<HeaderContainer>
-			<HeaderTitle>신규가입하면 첫 커피챗 무료!</HeaderTitle>
-			<SearchBar></SearchBar>
+			<Banner>
+				<BannerContent>
+					<BannerTitle>신규가입하면 첫 커피챗 무료!</BannerTitle>
+					<BannerButton>앱으로 보기</BannerButton>
+				</BannerContent>
+			</Banner>
+			<SubHeader />
 		</HeaderContainer>
 	);
 };

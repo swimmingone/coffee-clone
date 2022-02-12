@@ -6,6 +6,7 @@ import ReviewList from './ReviewList';
 import RecommendList from './RecommendList';
 import MentorList from './MentorList';
 import InfoFooter from './InfoFooter';
+import Introduction from './Introduction';
 
 const Container = styled.div`
 	display: flex;
@@ -27,6 +28,7 @@ const HomeBody = () => {
 			<MentorList />
 			<MentorList />
 			<MentorList />
+			<Introduction />
 			<InfoFooter />
 		</Container>
 	);
