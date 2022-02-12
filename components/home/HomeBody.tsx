@@ -19,12 +19,12 @@ const HomeBody = () => {
 		<Container>
 			<EventList />
 			<CategoryList />
-			<PartnerList />
-			<ReviewList />
+			{/*<PartnerList />*/}
+			{/*<ReviewList />*/}
 			<RecommendList />
-			<MentorList />
-			<MentorList />
-			<MentorList />
+			{/*<MentorList />*/}
+			{/*<MentorList />*/}
+			{/*<MentorList />*/}
 			<Introduction />
 			<InfoFooter />
 		</Container>
