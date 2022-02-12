@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Slick from '../common/Slick';
 import Event from './Event';
 
-interface itemsProps {
+interface eventsProps {
 	item: string;
 	name: string;
 }
@@ -13,7 +13,7 @@ const Container = styled.div`
 `;
 
 const EventList = () => {
-	const items: itemsProps[] = [
+	const events: eventsProps[] = [
 		{
 			item: '/images/event/event01.png',
 			name: 'event01',
@@ -42,8 +42,8 @@ const EventList = () => {
 	return (
 		<Container>
 			<Slick>
-				{items.map((item, index) => (
-					<Event key={item.name} item={item.item} name={item.name} />
+				{events.map((event) => (
+					<Event key={event.name} item={event.item} name={event.name} />
 				))}
 			</Slick>
 		</Container>
