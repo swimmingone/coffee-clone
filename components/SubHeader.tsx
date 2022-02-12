@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 const Container = styled.div`
-	width: 100vw;
 	height: 48px;
 	display: flex;
 	background-color: white;
+	margin: 0px 8px 0px 12px;
 	justify-content: space-between;
 `;
 

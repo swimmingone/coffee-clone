@@ -13,6 +13,7 @@ const ImageContainer = styled.button`
 	border: none;
 	justify-content: center;
 	background-color: rgb(245, 247, 250);
+	cursor: pointer;
 `;
 const NameContainer = styled.div`
 	color: rgba(28, 31, 41, 0.96);

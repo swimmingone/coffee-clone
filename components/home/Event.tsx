@@ -14,6 +14,7 @@ const Container = styled.div`
 
 const ImgContainer = styled.div`
 	margin: 0 3px;
+	cursor: pointer;
 `;
 
 const Event = ({ item, name }: Props) => {
